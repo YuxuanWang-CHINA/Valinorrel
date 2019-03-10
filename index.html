@@ -144,6 +144,27 @@
                       };
                   </script>
                 
+                  
+                    <div class="item">
+                  
+                    <img id="carousel-img3" src="/css/images/004.jpg">
+                  </div>
+
+                  <!-- 自适应大图 -->
+                  <script>
+                      var img3 = new Image();
+                      var imageTag3 = document.getElementById("carousel-img3");
+                      img3.src = imageTag3.src;
+                      img3.onload=function(){
+                        if (img3.width / img3.height <= document.body.clientWidth / document.body.clientHeight) {
+                          imageTag3.style.width = document.body.clientWidth + "px";
+                        } else {
+                          imageTag3.style.height = document.body.clientHeight + "px";
+                          imageTag3.style.marginLeft = -(document.body.clientHeight * img3.width / img3.height - document.body.clientWidth) / 2 + "px";
+                        }
+                      };
+                  </script>
+                
             </div>
 
             <!-- Controls -->
@@ -265,7 +286,7 @@
         
   
     <h1 class="thumb" itemprop="name">
-      <a class="article-title" href="/About/Writer/cjt2qq8oa0000uc1ojh6flsge/">Writer</a>
+      <a class="article-title" href="/About/Writer/cjt2r30iy0001es1oaihn7c1c/">Writer</a>
     </h1>
   
 
@@ -273,7 +294,7 @@
     
     <div class="article-meta">
       
-	<a href="/About/Writer/cjt2qq8oa0000uc1ojh6flsge/" class="article-date">
+	<a href="/About/Writer/cjt2r30iy0001es1oaihn7c1c/" class="article-date">
 	  <time datetime="2019-03-03T05:03:27.000Z" itemprop="datePublished">2019-03-03</time>
 	</a>
 
@@ -291,7 +312,7 @@
 
         </p>
         <p class="article-more-link">
-          <a href="/About/Writer/cjt2qq8oa0000uc1ojh6flsge/#more">阅读全文</a>
+          <a href="/About/Writer/cjt2r30iy0001es1oaihn7c1c/#more">阅读全文</a>
         </p>
       
     </div>
